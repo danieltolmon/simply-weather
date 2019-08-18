@@ -1,0 +1,48 @@
+@import "../../index.scss";
+
+.favorites {
+  position: absolute;
+  left: 60%;
+  height: 80%;
+  width: 39%;
+  top: 10%;
+  overflow-y: auto;
+  direction: rtl;
+
+  &__favorite {
+    margin: 0.5rem;
+    min-height: 10%;
+    border-bottom: $purple-color 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    &-title {
+      color: $purple-color;
+      size: 1.5rem;
+      text-align: left;
+    }
+
+    &-icon {
+      color: $purple-color;
+      margin-left: 2rem;
+      font-size: 1rem;
+    }
+  }
+
+  &__Nofavorite {
+    margin: 0.5rem;
+    min-height: 10%;
+    border-bottom: $purple-color 1px solid;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    &-title {
+      color: $purple-color;
+      size: 1.5rem;
+      text-align: center;
+    }
+  }
+}

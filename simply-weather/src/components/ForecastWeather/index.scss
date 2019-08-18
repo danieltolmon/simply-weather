@@ -1,0 +1,58 @@
+@import "../../index.scss";
+
+.forecastWeather {
+  min-height: 100%;
+  width: 100%;
+  flex-grow: 1;
+
+  @include sm {
+    margin-left: 0.35rem;
+  }
+
+  &__forecast {
+    margin: 0.7rem auto;
+    height: 10%;
+    height: 100px;
+    width: 100%;
+    background-color: $blue3-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include sm {
+      margin: 0;
+      margin-bottom: 0.7rem;
+      flex-direction: row;
+      height: 15%;
+    }
+
+    &-day {
+      font-family: $font-Mont;
+      font-size: 2rem;
+      color: white;
+    }
+    &-icon {
+      height: 100%;
+      max-height: 100px;
+      @include sm {
+        height: 100%;
+      }
+    }
+    &-temp {
+      font-family: $font-Karla;
+      font-size: 1.5rem;
+      color: white;
+      @include sm {
+        font-size: 2rem;
+      }
+    }
+    &-humidity {
+      font-family: $font-Karla;
+      font-size: 1.5rem;
+      color: $primary-color;
+      @include sm {
+        font-size: 2rem;
+      }
+    }
+  }
+}

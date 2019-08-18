@@ -1,0 +1,71 @@
+@import "../../index.scss";
+
+.header {
+  height: 5.3%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: $primary-color;
+  
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-right: 2%;
+  }
+
+  &__form {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__iconSearch{
+      color: white;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+  }
+
+  &__search {
+    width: 40%;
+    margin-right: 2rem;
+    background: none;
+    border: none;
+    border-bottom: white 1px solid;
+    caret-color: white;
+    padding-bottom: 0.5rem;
+    color: white;
+    font-family: $font-Karla;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  &__favoritesButton {
+    width: 20%;
+    padding: 0.5rem;
+    background: none;
+    font-family: $font-Karla;
+    color: white;
+    border: white 1px solid;
+    border-radius: 7rem;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    &:hover {
+      border: white 2px solid;
+      font-weight: bolder;
+    }
+  }
+}
+
+.logo {
+  font-family: $font-logo;
+  font-size: 1.3rem;
+  color: white;
+  white-space: nowrap;
+}

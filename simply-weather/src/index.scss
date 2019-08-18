@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Karla|Montserrat|Pacifico&display=swap');
+
+$font-Mont: 'Montserrat';
+$font-Karla: 'Karla';
+$font-logo: 'Pacifico';
+
+$primary-color: #3e517a;
+$blue1-color: #a8e0ff;
+$blue2-color: #8ee3f5;
+$blue3-color: #70cad1;
+$purple-color: #b08ea2;
+
+$screen-sm-min: 576px;
+
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+      @content;
+  }
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body, #root {
+  height: 100%;
+  
+  h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+  };
+
+  p{
+    font-family: 'Karla', sans-serif;
+  }
+};
+
+
+
+
